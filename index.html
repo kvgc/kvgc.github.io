@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KVGC-blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/imgs/bkg.jpg');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:25%">
+  <div class="bgimg"></div>
+</nav> -->
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:25%">
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Blog</h2>
+    <hr class="w3-opacity">
+    <p>
+        A traditional blog post can be thought of as residing in a network, with webpages linking to and from it. However, if one were to naively consider every incoming and outgoing link to this webpage, it can become a bit chaotic. This series is my humble attempt to manually curate a network (a 'roadmap') with interesting content from the internet along with my own commentary as needed. 
+        This will hopefully serve as a compass to those who wish to navigate the information superhighway. 
+    </p>
+
+    <b> Roadmap</b>
+    <p>
+        <iframe style="height: 100vh;" src="blog/tiddlywiki-cosmicnoon.html?tmap-enlarged=fullscreen" width="100%"></iframe>
+    </p> 
+
+    <b> Nodes</b>
+
+    <ul>
+        <li>March 10, 2023 : <a href="blog/chatGPT-and-emojis.html">chatGPT and emojis</a></li>
+        <li>March 11, 2023 : <a href="blog/zotero-to-Tiddlywiki5.html">Zotero to Tiddlywiki</a></li>
+        <li>March 13, 2023 : <a href="blog/arxiv-shorts.html">arxiv-shorts</a></li>
+        <li>March 14, 2023 : <a href="blog/Text-Fragments.html">Text Fragments</a></li>
+        <li>March 15, 2023 : <a href="blog/hoki.html">hoki: sed fitting, BPASS and python</a></li>
+        <li>March 18, 2023 : <a href="blog/chatGPT-online-business.html">Using chatGPT to build an online business</a></li>
+        <li>March 22, 2023 : <a href="blog/some-of-things-binary-stars-do.html">Some of the things binary stars do....</a></li>
+        <li>March 23, 2023 : <a href="blog/interesting-digital-gardens.html">List of interesting digital gardens</a></li>
+    </ul>
+
+
+    </div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "20%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
