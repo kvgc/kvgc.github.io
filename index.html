@@ -8,15 +8,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/imgs/bkg.jpg');
-  min-height: 100%;
+body, h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px
 }
+.w3-row-padding img {margin-bottom: 12px}
 </style>
 </head>
 <body>
@@ -24,7 +23,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Sidebar with image -->
 <!-- <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:25%">
   <div class="bgimg"></div>
-</nav> --> -->
+</nav> -->
 
 <!-- Page Content -->
 <div class="w3-main w3-padding-large" style="margin-left:0%; width:90%">
@@ -34,17 +33,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2>The Curated Internet</h2>
     <hr class="w3-opacity">
     <p>
-        A traditional blog post can be thought of as residing in a network, with webpages linking to and from it. 
-        However, if one were to naively consider every incoming and outgoing link to this webpage, it can become a bit chaotic. 
-        This series is my humble attempt to manually curate a network (a 'roadmap') with interesting content from the internet along with my own commentary as needed. 
+        A traditional blog post can be thought of as residing in a network, with webpages linking to and from it.
+        However, if one were to naively consider every incoming and outgoing link to this webpage, it can become a bit chaotic.
+        This series is my humble attempt to manually curate a network (a 'roadmap') with interesting content from the internet along with my own commentary as needed.
         This will hopefully serve as a compass to those who wish to navigate its treacherous seas.
     </p>
-
-    <b> Roadmap</b>
-    <p>
-        <iframe style="height: 100vh; width: 100%" src="blog/tiddlywiki-cosmicnoon.html?tmap-enlarged=fullscreen" width="100%"></iframe>
-    </p> 
-
     <b> Nodes</b>
 
     <ul>
@@ -64,9 +57,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <li>April 21, 2023 : <a href="blog/Strategies-for-Depressed-AI-Academics.html">Choose Your Weapon: Survival Strategies for Depressed AI Academics</a></li>
 
     </ul>
+    <b> Roadmap</b>
 
+</div>
 
-    </div>
+<div class="w3-container" >
+
+  <p>
+      <iframe style="width: 110%; height:100vh;" src="blog/tiddlywiki-cosmicnoon.html?tmap-enlarged=fullscreen" width="100%"></iframe>
+  </p>
+</div>
 
 <script>
 // Open and close sidebar
