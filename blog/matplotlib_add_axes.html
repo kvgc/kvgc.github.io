@@ -2714,7 +2714,7 @@ pre.hljs {
 
 
 </button></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">matplotlib's add_axes and windows lagscreen</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2nd October 2023 at 11:30pm</div></div><div class=" tc-reveal">
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2nd October 2023 at 11:44pm</div></div><div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="code">
 <span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
@@ -2739,9 +2739,19 @@ ax2.scatter([<span class="hljs-number">1</span>,<span class="hljs-number">2</spa
 
 ax3 = plt.gcf().add_axes([<span class="hljs-number">0.35</span>,-<span class="hljs-number">0.4</span>,<span class="hljs-number">0.5</span>,<span class="hljs-number">0.5</span>])
 ax3.scatter([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>])</code></pre><img src="../imgs/matplotlib_makeaxes1.png"><pre class="hljs"><code class="python hljs">plt.figure()
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">20</span>):
-    ax1 = plt.gcf().add_axes([<span class="hljs-number">0</span>+<span class="hljs-number">0.05</span>*i,<span class="hljs-number">0</span>-<span class="hljs-number">0.05</span>*i,<span class="hljs-number">0.5</span>,<span class="hljs-number">0.5</span>])
-    ax1.scatter(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)</code></pre><img src="../imgs/matplotlib_makeaxes2.png"></div>
+x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0.05</span>)
+y = -x-<span class="hljs-number">1</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(x)):
+    ax1 = plt.gcf().add_axes([x[i],y[i],<span class="hljs-number">0.5</span>,<span class="hljs-number">0.5</span>])
+    ax1.scatter(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)</code></pre><img src="../imgs/matplotlib_makeaxes2.png"><pre class="hljs"><code class="python hljs">plt.figure()
+x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0.05</span>)*np.pi*<span class="hljs-number">2</span>
+y = np.sin(x)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(x)):
+    ax1 = plt.gcf().add_axes([x[i],y[i],<span class="hljs-number">0.5</span>,<span class="hljs-number">0.5</span>])
+    ax1.scatter(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+</code></pre><img src="../imgs/matplotlib_makeaxes3.png"></div>
 </div>
 </a>
 </section>
